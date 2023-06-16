@@ -1,13 +1,11 @@
 #include <stdio.h>
 /**
+ * main -this is a funcion
  *
- * this is a foncion
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-/**
- * my main fonction
- */	
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }	
