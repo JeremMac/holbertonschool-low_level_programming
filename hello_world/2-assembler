@@ -1,2 +1,2 @@
 #!/bin/bash
-gss -s 2-main.c -o 2-main.s
+gss -S 2-main.c -o 2-main.s
