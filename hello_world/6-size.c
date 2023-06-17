@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-sizeof(char);
-sizeof(int);
-sizeof(long int);
-sizeof(long long int);
-sizeof(float);
+printf(sizeof(char));
+printf(sizeof(int));
+printf(sizeof(long int));
+printf(sizeof(long long int));
+printf(sizeof(float));
 return (0);
 }
