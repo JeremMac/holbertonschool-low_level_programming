@@ -14,6 +14,5 @@ if (al == 'q' || al == 'e')
 putchar(' ');
 }
 }
-putchar('\n');
 return (0);
 }
