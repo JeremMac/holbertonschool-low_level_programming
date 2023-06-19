@@ -8,10 +8,9 @@ int main(void)
 char al;
 for (al = 'a'; al <= 'z'; al++)
 {
-putchar(al);
-if (al == 'q' || al == 'e')
+if (al != 'q' || al != 'e')
 {
-al = '0';
+putchar(al);
 }
 }
 return (0);
