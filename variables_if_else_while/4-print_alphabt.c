@@ -13,5 +13,6 @@ if (al != 'q' && al != 'e')
 putchar(al);
 }
 }
+putchar('\n');
 return (0);
 }
