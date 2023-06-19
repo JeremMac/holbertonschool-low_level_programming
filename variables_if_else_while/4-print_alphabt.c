@@ -11,7 +11,7 @@ for (al = 'a'; al <= 'z'; al++)
 putchar(al);
 if (al == 'q' || al == 'e')
 {
-putchar(' ');
+al == '0';
 }
 }
 return (0);
