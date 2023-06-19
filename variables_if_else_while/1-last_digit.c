@@ -22,7 +22,7 @@ printf("last digit of %d is %d and is 0", n, last_digit);
 }
 if (last_digit < 6 && last_digit != 0)
 {
-printf("last digit of %d is %d and is less than 6 ans not 0", n, last_digit);
+prinf("last digit of %d is %d and is less than 6 ans not 0", n, last_digit);
 }
 return (0);
 }
