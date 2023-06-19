@@ -9,10 +9,10 @@ char al;
 for (al = 'a'; al <= 'z'; al++)
 {
 putchar(al);
-}
-if (al == 'q' && al == 'e')
+if (al == 'q' || al == 'e')
 {
-al == ' ';
+putchar(' ');
+}
 }
 putchar('\n');
 return (0);
