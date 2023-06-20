@@ -4,9 +4,18 @@
  * _abs- prints the absolute value of int
  * Return: Always 0 (Success)
  * @int: parameter of _abs
+ * @n: member of _abs
  */
-int _abs(int)
+int _abs(int n)
 {
-putchar(abs(int));
+if (n < 0)
+{
+n = (-1) * n;
+return (n);
+}
+if (n < 0)
+{
+return (n);
+}
 return (0);
 }
