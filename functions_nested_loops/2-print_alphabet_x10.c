@@ -10,7 +10,7 @@ char al;
 int cnt;
 al = 'a';
 cnt = 1;
-while (cnt < 10)
+while (cnt <= 10)
 {
 while (al <= 'z')
 {
@@ -18,7 +18,7 @@ putchar(al);
 al++;
 }
 putchar('\n');
-cnt++
+cnt++;
 }
 return (al);
 }
