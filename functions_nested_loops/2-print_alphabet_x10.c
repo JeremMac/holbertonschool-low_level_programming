@@ -16,9 +16,9 @@ while(cnt <= 10)
 {
 putchar(al);
 al++;
-cnt++
+cnt++;
 }
 }
-putchar('\n')
+putchar('\n');
 return (al);
 }
