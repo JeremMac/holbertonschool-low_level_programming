@@ -15,7 +15,6 @@ while (cnt <= 10)
 for (al = 'a'; al <= 'z'; al++)
 {
 putchar(al);
-putchar('\n');
 }
 }
 return (al);
