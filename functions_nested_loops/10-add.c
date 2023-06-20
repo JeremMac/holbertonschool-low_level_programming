@@ -7,9 +7,9 @@
  * @b: second member of add
  * int - type of a and b
  */
-int add(int a, int b)
+int add(int b, int c)
 {
-int c;
-c = a + b;
-return (c);
+int f;
+f = b + c;
+return (f);
 }
