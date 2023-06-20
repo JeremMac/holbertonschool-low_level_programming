@@ -1,10 +1,10 @@
-#include <stdio.h>
+*#include <stdio.h>
 #include <ctype.h>
 #include "main.h"
 /**
  *_islower - check lowercase character
  *Return: 1 if c is lowercase
- *Return: 0 otherwise
+ *@c: member of my function
  */
 int _islower(int c)
 {
