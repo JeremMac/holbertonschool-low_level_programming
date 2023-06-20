@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet - where the program is
+ * print_alphabet_x10 - where the program is
  * Return: Always 0 (Success)
  */
 char print_alphabet_x10(void)
@@ -18,7 +18,7 @@ putchar(al);
 al++;
 }
 putchar('\n');
+return (al);
 cnt++;
 }
-return (al);
 }
