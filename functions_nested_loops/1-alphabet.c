@@ -6,7 +6,6 @@
  */
 char print_alphabet(char al)
 {
-a = 0;
 al = 'a';
 while (al <= 'z')
 {
