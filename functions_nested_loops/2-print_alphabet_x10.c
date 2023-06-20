@@ -17,9 +17,9 @@ while (al <= 'z')
 putchar(al);
 al++;
 }
+putchar(al);
 putchar('\n');
 cnt++;
-return (al);
 }
 return (al);
 }
