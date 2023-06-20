@@ -4,13 +4,14 @@
  * print_alphabet - where the program is
  * Return: Always 0 (Success)
  */
-char print_alphabet(char al)
+char print_alphabet(char al, int a)
 {
+a = 0;
 al = 'a';
 while (al <= 'z')
 {
 putchar(al);
-al = al++;
+al++;
 }
 return (al);
 }
