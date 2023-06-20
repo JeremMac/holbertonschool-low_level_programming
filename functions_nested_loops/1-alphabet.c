@@ -4,7 +4,7 @@
  * print_alphabet - where the program is
  * Return: Always 0 (Success)
  */
-char print_alphabet(char al, int a)
+char print_alphabet(char al)
 {
 a = 0;
 al = 'a';
