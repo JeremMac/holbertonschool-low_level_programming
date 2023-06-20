@@ -13,5 +13,6 @@ while (al <= 'z')
 putchar(al);
 al++;
 }
+putchar('\n');
 return (al);
 }
