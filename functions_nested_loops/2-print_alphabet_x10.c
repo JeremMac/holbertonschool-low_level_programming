@@ -10,15 +10,13 @@ char al;
 int cnt;
 al = 'a';
 cnt = 1;
-while (al <= 'z')
-{
 while (cnt <= 10)
 {
+for (al = 'a'; al <= 'z'; al++)
+{
 putchar(al);
-al++;
-cnt++;
-}
-}
 putchar('\n');
+}
+}
 return (al);
 }
