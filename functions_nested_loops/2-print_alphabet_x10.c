@@ -18,7 +18,7 @@ putchar(al);
 al++;
 }
 putchar('\n');
-return (al);
 cnt++;
 }
+return (al);
 }
