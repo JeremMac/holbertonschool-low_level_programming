@@ -12,7 +12,7 @@ al = 'a';
 cnt = 1;
 while (al <= 'z')
 {
-while(cnt <= 10)
+while (cnt <= 10)
 {
 putchar(al);
 al++;
