@@ -4,7 +4,7 @@
  * print_alphabet - where the program is
  * Return: Always 0 (Success)
  */
-char print_alphabet(char al)
+char print_alphabet(void)
 {
 al = 'a';
 while (al <= 'z')
