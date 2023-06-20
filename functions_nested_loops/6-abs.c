@@ -3,7 +3,7 @@
 /**
  * _abs- prints the absolute value of int
  * Return: Always 0 (Success)
- * @int: parameter of _abs
+ * int - parameter of _abs
  * @n: member of _abs
  */
 int _abs(int n)
@@ -17,5 +17,4 @@ if (n < 0)
 {
 return (n);
 }
-return (0);
 }
