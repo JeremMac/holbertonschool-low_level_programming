@@ -9,6 +9,6 @@
 int print_last_digit(int n)
 {
 int last_digit;
-last_digit = n % 58;
+last_digit = n % 'a';
 return (last_digit);
 }
