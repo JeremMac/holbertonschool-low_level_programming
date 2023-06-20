@@ -19,6 +19,7 @@ al++;
 }
 putchar('\n');
 cnt++;
+return (al);
 }
 return (al);
 }
