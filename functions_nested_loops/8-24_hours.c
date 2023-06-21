@@ -41,5 +41,16 @@ _putchar(sec + '0');
 _putchar(sec_ + '0');
 _putchar('\n');
 }
+/*a voir s'il faut changer les compteurs*/
+if (sec == 6)
+{
+min++;
+sec = 0;
+}
+if (min == 10)
+{
+min_++;
+min = 0;
+}
 }
 }
