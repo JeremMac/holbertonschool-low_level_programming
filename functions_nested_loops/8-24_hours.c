@@ -40,7 +40,7 @@ _putchar(':');
 _putchar(sec + '0');
 _putchar(sec_ + '0');
 _putchar('\n');
-if ((min_ <= 50 && min <= 3) && (sec <= 5 && sec_ <= 9))
+if ((min_ <= 50 && min <= 3) || (sec <= 5 && sec_ <= 9))
 {
 break;
 }
