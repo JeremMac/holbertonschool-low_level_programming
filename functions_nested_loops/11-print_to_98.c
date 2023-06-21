@@ -7,11 +7,15 @@
  */
 void print_to_98(int n)
 {
-while (n <= b) 
+while (n <= 'b') 
 {
-putchar(n + '0');
-putchar(',');
-putchar(' ');
+_putchar(n + '0');
+_putchar(',');
+_putchar(' ');
 n++;
+if (n < 'b')
+{
+n--;
+}
 }
 }
