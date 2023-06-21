@@ -10,11 +10,11 @@ int min_;
 int min;
 int sec_;
 int sec;
-min_ = 0;
+min_ = 48;
 min = 0;
 sec_ = 0;
 sec = 0;
-while (min_ <= 2 && min < 3)
+while (min_ <= 50 && min < 3)
 {
 while (sec_ <= 9)
 {
@@ -34,7 +34,7 @@ if (min == 10)
 min_++;
 min = 0;
 }
-_putchar(min_ + '0');
+_putchar(min_);
 _putchar(min + '0');
 _putchar(':');
 _putchar(sec + '0');
