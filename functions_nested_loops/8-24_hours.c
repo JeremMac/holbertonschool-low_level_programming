@@ -4,7 +4,7 @@
  * jack_bauer - prints every minutes of jack bauer's day
  * Return: retursn a counter
  */
-void jack_bauer(void)
+int jack_bauer(void)
 {
 int min_;
 int min;
@@ -41,5 +41,5 @@ _putchar(':');
 _putchar(sec);
 _putchar(sec_);
 }
-return (0);
+return (int);
 }
