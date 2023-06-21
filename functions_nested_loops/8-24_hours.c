@@ -1,30 +1,45 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *jack_bauer - prints every minutes in the day of jack bauer
- *Return: returns the printed result of jack_bauer
+ * jack_bauer - prints every minutes of jack bauer's day
+ * Return: retursn a counter
  */
 void jack_bauer(void)
 {
-int seco;
-int seco_;
-int min;
 int min_;
-seco = 0;
-seco_ = 0;
-min = 0;
+int min;
+int sec_;
+int sec;
 min_ = 0;
-while (seco_ < 2)
+min = 0;
+sec_ = 0;
+sec = 0;
+while (min_ <= 2 && min < 3)
 {
-while (seco < 9)
+while (sec_ <= 9)
 {
-seco++;
-if(seco == 9)
+sec_++;
+if (sec_ == 9)
 {
-seco = 0;
-seco_++;
+sec++;
+sec_ = 0;
 }
 }
+if (sec == 6)
+{
+min++;
+sec = 0;
+}
+if (min == 9)
+{
+min_++;
+min = 0;
+}
+_putchar(min_);
+_putchar(min);
+_putchar(':');
+_putchar(sec);
+_putchar(sec_);
 }
 return (0);
 }
