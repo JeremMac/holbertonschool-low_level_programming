@@ -6,15 +6,16 @@
  */
 void jack_bauer(void)
 {
+int compt;
 int min_;
 int min;
 int sec_;
-int sec;
+int sec;compt = 0;
 min_ = 48;
 min = 0;
 sec_ = 0;
 sec = 0;
-while (min_ <= 50 && min <= 3)
+while (compt <= 1439)
 {
 while (sec_ <= 9)
 {
@@ -41,16 +42,7 @@ _putchar(sec + '0');
 _putchar(sec_ + '0');
 _putchar('\n');
 }
-/*a voir s'il faut changer les compteurs*/
-if (sec == 6)
-{
-min++;
-sec = 0;
-}
-if (min == 10)
-{
-min_++;
-min = 0;
+compt++;
 }
 }
 }
