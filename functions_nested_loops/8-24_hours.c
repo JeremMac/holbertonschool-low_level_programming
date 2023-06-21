@@ -36,7 +36,7 @@ min = 0;
 }
 _putchar(min_);
 _putchar(min);
-_putchar(':');
+_putchar(':')
 _putchar(sec_);
 _putchar(sec);
 }
