@@ -34,11 +34,12 @@ if (min == 9)
 min_++;
 min = 0;
 }
-_putchar(min_);
-_putchar(min);
+_putchar(min_ + '0');
+_putchar(min + '0');
 _putchar(':');
-_putchar(sec_);
-_putchar(sec);
+_putchar(sec_ + '0');
+_putchar(sec + '0');
+_putchar('\n');
 }
 }
 }
