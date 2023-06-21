@@ -41,5 +41,4 @@ _putchar(sec_);
 _putchar(sec);
 }
 }
-return (0);
 }
