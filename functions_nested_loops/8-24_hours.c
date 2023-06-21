@@ -14,7 +14,7 @@ min_ = 48;
 min = 0;
 sec_ = 0;
 sec = 0;
-while (min_ <= 50 && min == 3)
+while (min_ <= 50 && min <= 3)
 {
 while (sec_ <= 9)
 {
@@ -40,10 +40,6 @@ _putchar(':');
 _putchar(sec + '0');
 _putchar(sec_ + '0');
 _putchar('\n');
-if ((min_ <= 50 && min <= 3) || (sec <= 5 && sec_ <= 9))
-{
-break;
-}
 }
 }
 }
