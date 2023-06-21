@@ -39,7 +39,6 @@ _putchar(min + '0');
 _putchar(':');
 _putchar(sec + '0');
 _putchar(sec_ + '0');
-_putchar('\n');
-}
+_putchar('\n')
 }
 }
