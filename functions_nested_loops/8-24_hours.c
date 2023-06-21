@@ -19,7 +19,7 @@ while (min_ <= 2 && min < 3)
 while (sec_ <= 9)
 {
 sec_++;
-if (sec_ == 9)
+if (sec_ == 10)
 {
 sec++;
 sec_ = 0;
@@ -29,7 +29,7 @@ if (sec == 6)
 min++;
 sec = 0;
 }
-if (min == 9)
+if (min == 10)
 {
 min_++;
 min = 0;
@@ -37,8 +37,8 @@ min = 0;
 _putchar(min_ + '0');
 _putchar(min + '0');
 _putchar(':');
-_putchar(sec_ + '0');
 _putchar(sec + '0');
+_putchar(sec_ + '0');
 _putchar('\n');
 }
 }
