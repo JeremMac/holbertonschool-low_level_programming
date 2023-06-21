@@ -41,5 +41,5 @@ _putchar(':');
 _putchar(sec);
 _putchar(sec_);
 }
-return (int);
+return (int)
 }
