@@ -7,7 +7,7 @@
  */
 void print_to_98(int n)
 {
-while (n <= 146)
+while (n <= 'b')
 {
 _putchar(n);
 _putchar(',');
