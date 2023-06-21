@@ -7,10 +7,10 @@
  * @c: second member of add
  * int - type of a and b
  */
-int add(int b, int c)
+int add(int a, int b)
 {
-int f;
-f = b + c;
-_putchar(f + '0');
-return (f);
+int c;
+c = a + b;
+_putchar(c + '0');
+return (c);
 }
