@@ -14,7 +14,7 @@ min_ = 48;
 min = 0;
 sec_ = 0;
 sec = 0;
-while (min_ <= 50 && min < 3)
+while (min_ == 50 && min == 3)
 {
 while (sec_ <= 9)
 {
