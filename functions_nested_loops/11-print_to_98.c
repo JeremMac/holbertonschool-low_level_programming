@@ -7,21 +7,10 @@
  */
 void print_to_98(int n)
 {
-while (n <= 98) 
-{
-_putchar(n + '0');
-_putchar(',');
-_putchar(' ');
-n++;
-}
-if (n > 98)
-{
-while (n > 98)
-{
-_putchar(n + '0');
-_putchar(',');
-_putchar(' ');
-n--;
-}
-}
+	while (n < 98)
+	{
+		_putchar(n / '10');
+		_putchar(n % '10');
+		n++;
+	}
 }
