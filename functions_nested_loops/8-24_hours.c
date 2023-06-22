@@ -6,13 +6,11 @@
  */
 void jack_bauer(void)
 {
-	int compt;
 	int min_;
 	int min;
 	int sec_;
 	int sec;
 
-	compt = 0;
 	min_ = 48;
 	min = 0;
 	sec_ = 0;
