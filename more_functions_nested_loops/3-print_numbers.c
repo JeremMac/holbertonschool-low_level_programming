@@ -7,7 +7,7 @@ void print_numbers()
 {
 	int num;
 	
-	num = 9; 
+	num = 0; 
 	
 	while (num <= 9)
 	{
