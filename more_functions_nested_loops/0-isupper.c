@@ -10,6 +10,10 @@ int _isupper(int c)
 	{
 		return (1);
 	}
+	else if (c >= 126 && < 90)
+	{
+		return (0);
+	}
 	else
 	{
 		return(0);
