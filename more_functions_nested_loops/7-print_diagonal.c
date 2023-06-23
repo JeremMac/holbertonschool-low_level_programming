@@ -12,11 +12,6 @@ void print_diagonal(int n)
 	hauteur = 0;
 	longueur = 0;
 
-	while (longueur < n)
-	{
-		_putchar(' ');
-		longueur++;
-	}
 	while (hauteur < n)
 	{
 		_putchar('\\');
