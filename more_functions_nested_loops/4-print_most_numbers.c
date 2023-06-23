@@ -3,7 +3,7 @@
  *  *main - the program is in here
  *   *Return: Always 0 (Success)
  *    */
-void print_most_numbers(void);
+void print_most_numbers(void)
 {
 	int num;
 	for (num = 0; num <= 9; num++)
