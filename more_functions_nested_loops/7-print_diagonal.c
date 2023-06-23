@@ -7,7 +7,7 @@
 void print_diagonal(int n)
 {
 	int hauteur;
-	int a
+	int a;
 
 	hauteur = 0;
 
