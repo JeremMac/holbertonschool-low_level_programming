@@ -30,7 +30,7 @@ void more_numbers(void)
 					nim++;
 				}
 			}
-			count++;
+			cont++;
 		}
 		cnt++;
 		_putchar('\n');
