@@ -5,3 +5,4 @@ NAME = school
 all: 
 	$(CC) -c -o $(OBJ) $(SRC)
 	$(CC) -c -o $(OBJ) $(SRC)
+	$(CC) main.o school.o -o $(NAME)
