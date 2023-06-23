@@ -7,10 +7,8 @@
 void print_diagonal(int n)
 {
 	int hauteur;
-	int longueur;
 
 	hauteur = 0;
-	longueur = 0;
 
 	while (hauteur < n)
 	{
