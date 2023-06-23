@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include "main.h"
 /**
  *  *main - the program is in here
  *   *Return: Always 0 (Success)
