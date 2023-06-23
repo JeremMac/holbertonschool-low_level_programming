@@ -23,10 +23,10 @@ void print_diagonal(int n)
 	}
 	while (hauteur < n)
 	{
-		_putchar('/n');
+		_putchar('\n');
 		hauteur++;
 	}
-	_putchar("\\");
+	_putchar('\\');
 	imp++;
 	}
 }
