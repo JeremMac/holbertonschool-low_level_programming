@@ -8,7 +8,7 @@ void print_diagonal(int n)
 {
 	int hauteur;
 	int a;
-	char spc;
+	int spc;
 
 	spc = ' ';
 	hauteur = 0;
