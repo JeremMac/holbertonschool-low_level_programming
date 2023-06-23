@@ -13,10 +13,10 @@ void print_diagonal(int n)
 
 	while (hauteur < n)
 	{
+		_putchar('\\');
 		for (a = 1; a < n; a++)
 		{
 			_putchar(' ');
-			_putchar('\\');
 		}
 		hauteur++;
 	}
