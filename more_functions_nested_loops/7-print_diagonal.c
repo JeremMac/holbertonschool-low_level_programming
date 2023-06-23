@@ -8,7 +8,7 @@ void print_diagonal(int n)
 {
 	int hauteur;
 	int a;
-	int spc;
+	char spc;
 
 	spc = ' ';
 	hauteur = 0;
@@ -19,7 +19,6 @@ void print_diagonal(int n)
 		for (a = 1; a < n; a++)
 		{
 			_putchar(spc + '0');
-			spc++;
 		}
 		hauteur++;
 	}
