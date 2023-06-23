@@ -26,7 +26,7 @@ void print_diagonal(int n)
 		_putchar('/n');
 		hauteur++;
 	}
-	_putchar('\');
+	_putchar("\\");
 	imp++;
 	}
 }
