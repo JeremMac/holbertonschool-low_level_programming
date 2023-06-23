@@ -19,17 +19,17 @@ void more_numbers(void)
 	{
 		while (cont <= 9)
 		{
-			_putchar(num + '0');
-			num++;
 			if (num == 9)
 			{
 				num = 1;
 				while (nim <= 4)
 				{
+					_putchar(num + '0');
 					_putchar(nim + '0');
 					nim++;
 				}
 			}
+			num++;
 			cont++;
 		}
 		cnt++;
