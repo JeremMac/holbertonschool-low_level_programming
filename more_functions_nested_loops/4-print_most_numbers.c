@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - the program is in here
+ * print_most_numbers - the program is in here
  * Return: Always 0 (Success)
  */
 void print_most_numbers(void)
