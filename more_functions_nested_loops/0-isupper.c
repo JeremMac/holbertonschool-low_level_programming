@@ -5,7 +5,7 @@
  */
 int _isupper(int c)
 {
-	if (n >= 65)
+	if (c >= 65)
 	{
 		return (1);
 	}
