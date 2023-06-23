@@ -18,7 +18,7 @@ void print_diagonal(int n)
 		_putchar('\\');
 		for (a = 1; a < n; a++)
 		{
-			_putchar(spc);
+			_putchar(spc + '0');
 			spc++;
 		}
 		hauteur++;
