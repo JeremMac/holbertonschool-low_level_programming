@@ -2,7 +2,7 @@
 /**
  * _isupper - check for upper case
  * Return: return 1 if uppercase
- * @n: is a member of _isupper
+ * @c: is a member of _isupper
  */
 int _isupper(int c)
 {
@@ -14,5 +14,4 @@ int _isupper(int c)
 	{
 		return (0);
 	}
-	
 }
