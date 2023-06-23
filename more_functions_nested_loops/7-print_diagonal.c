@@ -9,7 +9,6 @@ void print_diagonal(int n)
 	int hauteur;
 	int longueur;
 
-	imp = 0;
 	hauteur = 0;
 	longueur = 0;
 
