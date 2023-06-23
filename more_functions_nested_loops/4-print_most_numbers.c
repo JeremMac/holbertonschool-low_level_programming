@@ -5,12 +5,12 @@ nclude <stdio.h>
  *    */
 int main(void)
 {
-	int al;
-	for (al = 0; al <= 9; al++)
+	int num;
+	for (num = 0; num <= 9; num++)
 	{
-		if (al != 2 && al != 2)
+		if (num != 2 && num != 2)
 		{
-			_putchar(al + '0');
+			_putchar(num + '0');
 		}
 	}
 	_putchar('\n');
