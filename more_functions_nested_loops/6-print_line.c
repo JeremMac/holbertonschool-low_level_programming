@@ -4,7 +4,7 @@
  * Return: nothing
  *@n: member of print_line
  * int - parameter of print_line
- */ 
+ */
 void print_line(int n)
 {
 	int a;
