@@ -5,7 +5,7 @@
  */
 void print_numbers
 {
-	int num
+	int num;
 	
 	num = 9; 
 	
