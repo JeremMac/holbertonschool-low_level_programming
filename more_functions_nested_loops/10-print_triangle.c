@@ -10,7 +10,7 @@ void print_triangle(int size)
 	int tgl;
 		for (tgl = 0; tgl < size; tgl++)
 		{
-			_putchar('\n');
+			_putchar('#');
 			if (tgl > 1)
 			{
 				_putchar('\n');
