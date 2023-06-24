@@ -7,7 +7,6 @@
  */
 void print_triangle(int size)
 {
-	int spc;
 	int tgl;
 	int endl;
 
