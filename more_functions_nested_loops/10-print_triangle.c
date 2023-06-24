@@ -11,7 +11,7 @@ void print_triangle(int size)
 	int tgl;
 	int endl;
 
-	for (spc = size; size > 0; spc--)
+	for (spc = size; spc == size; spc--)
 	{
 		_putchar(' ');
 		_putchar('\n');
