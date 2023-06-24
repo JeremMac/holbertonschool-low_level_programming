@@ -11,17 +11,12 @@ void print_triangle(int size)
 	int tgl;
 	int endl;
 
-	for (spc = size; spc == size; spc--)
+	for(endl = size; endl < size; endl++)
 	{
-		_putchar(' ');
-		_putchar('\n');
-		for(endl = size; endl < size; endl++)
+		for (tgl = 0; tgl < size; tgl++)
 		{
-			for (tgl = 0; tgl < size; tgl++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
+			_putchar('#');
 		}
+		_putchar('\n');
 	}
 }
