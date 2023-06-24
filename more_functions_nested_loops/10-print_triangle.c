@@ -11,6 +11,9 @@ void print_triangle(int size)
 		for (tgl = 0; tgl < size; tgl++)
 		{
 			_putchar('\n');
-			_putchar('#');
+			if(tgl > 1)
+			{
+				_putchar('\n');
+			}
 		}
 }
