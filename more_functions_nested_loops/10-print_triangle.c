@@ -9,15 +9,18 @@ void print_triangle(int size)
 {
 	int spc;
 	int tgl;
+	int endl;
 
-	for (spc = size; spc == size; spc--)
+	for (spc = size; size < 0; spc--)
 	{
 		_putchar(' ');
 		_putchar('\n');
-		for (tgl = 0; tgl < size; tgl++)
+		for(endl = size; endl < size; endl++)
 		{
-			_putchar('#');
-			_putchar('\n');
+			for (tgl = 0; tgl < size; tgl++)
+			{
+				_putchar('#');
+			}
 		}
 	}
 }
