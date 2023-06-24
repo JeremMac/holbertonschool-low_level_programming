@@ -8,7 +8,7 @@
 void print_triangle(int size)
 {
 	int tgl;
-		for (tgl = 0; tgl < size; tgl + 2)
+		for (tgl = 0; tgl < size; tgl = tgl + 2)
 		{
 			_putchar('#');
 		}
