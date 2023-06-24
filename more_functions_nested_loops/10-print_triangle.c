@@ -8,12 +8,8 @@
 void print_triangle(int size)
 {
 	int tgl;
-		for (tgl = 0; tgl < size; tgl++)
+		for (tgl = 0; tgl < size; tgl + 2)
 		{
 			_putchar('#');
-			if (tgl > 1)
-			{
-				_putchar('\n');
-			}
 		}
 }
