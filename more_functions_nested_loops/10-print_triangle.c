@@ -8,14 +8,9 @@
 void print_triangle(int size)
 {
 	int tgl;
-	int endl;
-
-	for(endl = size; endl < size; endl++)
-	{
 		for (tgl = 0; tgl < size; tgl++)
 		{
+			_putchar('\n');
 			_putchar('#');
 		}
-		_putchar('\n');
-	}
 }
