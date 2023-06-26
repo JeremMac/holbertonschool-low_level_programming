@@ -19,7 +19,6 @@ void print_rev(char *s)
 		{
 			_putchar(s[cnt]);
 			s--;
-			cnt--;
 		}
 	}
 	_putchar('\n');
