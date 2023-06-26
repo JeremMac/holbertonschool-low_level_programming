@@ -8,7 +8,8 @@
 void reset_to_98(int *n)
 {
 	int *point;
-	int *point = &n;
-	int point = 98;
+
+	*point = &n;
+	* point = 98;
 	_putchar(*point + '0');
 }
