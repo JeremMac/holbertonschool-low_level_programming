@@ -12,8 +12,8 @@ int _strlen(char *s)
 	cnt = 0;
 
 	while (cnt < s)
-	{
-		_putchar(cnt); 
+	{ 
 		cnt++;
 	}
+	return (cnt);
 }
