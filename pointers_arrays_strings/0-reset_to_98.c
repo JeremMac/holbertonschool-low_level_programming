@@ -7,9 +7,9 @@
  */
 void reset_to_98(int *n)
 {
-	int *point;
+	int reset;
 
-	point = &n;
-	*point = 98;
-	_putchar(*point + '0');
+	reset = 98;
+	*n = &reset;
+	_putchar(&reset +'0');
 }
