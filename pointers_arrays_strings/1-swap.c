@@ -6,7 +6,7 @@
  * @a: member of swap_int
  * @b: second member of swap_int
  */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
 	a = &b;
 	b = &a;
