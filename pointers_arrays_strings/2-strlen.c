@@ -8,7 +8,7 @@
 int _strlen(char *s)
 {
 	int my_tab[0];
-	int cnt;
+	int *cnt;
 
 	cnt = 0;
 
