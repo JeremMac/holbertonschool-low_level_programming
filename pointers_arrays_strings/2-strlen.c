@@ -13,7 +13,7 @@ int _strlen(char *s)
 	cnt = 0;
 	a = 0;
 
-	while (s[cnt] < s[])
+	while (s[cnt] < s)
 	{
 		s[cnt] = s[cnt] + 1;
 		a++;
