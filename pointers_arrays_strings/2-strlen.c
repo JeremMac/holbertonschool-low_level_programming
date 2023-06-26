@@ -7,14 +7,12 @@
  */
 int _strlen(char *s)
 {
-	int my_tab[0];
-	int *cnt;
+	int cnt;
 
-	cnt = 0;
-
-	while (my_tab[cnt] <= s)
-	{ 
-		my_tab[cnt] + 1;
+	while (s != '\0')
+	{
+		&s++;
+		cnt++;
 	}
 	return (cnt);
 }
