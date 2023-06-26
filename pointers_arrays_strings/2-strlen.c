@@ -7,13 +7,13 @@
  */
 int _strlen(char *s)
 {
-	int cnt;
+	int my_tab[0]
 
 	cnt = 0;
 
-	while (cnt < s)
+	while (my_tab[cnt] <= s)
 	{ 
-		cnt++;
+		my_tab[cnt] + 1;
 	}
 	return (cnt);
 }
