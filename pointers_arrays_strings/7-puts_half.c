@@ -9,6 +9,7 @@ void puts_half(char *str)
 	int cnt;
 	int numb;
 	int n;
+	int nom;
 
 	cnt = 0;
 	numb = 0;
@@ -17,18 +18,22 @@ void puts_half(char *str)
 	{
 		cnt++;
 		numb++;
+		nom++;
 	}
 	cnt = cnt / 2;
-	n = cnt - 1; 
+	n = (nom - 1) / 2; 
 	numb--;
-	while (cnt <= numb)
+	if (numb % 2 == 0)
 	{
-		_putchar(str[cnt]);
-		cnt++;
+		while (cnt <= numb)
+		{
+			_putchar(str[cnt]);
+			cnt++;
+		}
 	}
-	if (cnt % 2 == 0)
+	else
 	{
-		while(n <= numb)
+		while (n <= numb)
 		{
 			_putchar(str[n]);
 			n++;
