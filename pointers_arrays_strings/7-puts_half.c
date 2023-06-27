@@ -24,4 +24,5 @@ void puts_half(char *str)
 		_putchar(str[cnt]);
 		cnt++;
 	}
+	_putchar('\n');
 }
