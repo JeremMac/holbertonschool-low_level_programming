@@ -15,17 +15,11 @@ void puts_half(char *str)
 	while (str[cnt] != 0)
 	{
 		cnt++;
-	}
-	cnt = cnt / 2;
-	while (str[numb] <= cnt)
-	{
-		_putchar(str[numb]);
 		numb++;
 	}
-	cnt = cnt * 2;
-	numb++;
-	_putchar('\n');
-	while (str[numb] <= cnt)
+	cnt = cnt / 2;
+	numb--;
+	while (str[cnt] <= numb)
 	{
 		_putchar(str[cnt]);
 		cnt++;
