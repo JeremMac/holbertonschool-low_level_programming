@@ -8,13 +8,20 @@
 void puts2(char *str)
 {
 	int cnt;
+	int ent;
 
+	ent = 0;
 	cnt = 0;
-	while (*str != '\0')
+
+	while (str[ent] != '\0')
 	{
-		str++;
+		ent++;
+	}
+	ent--;
+	while (str[cnt] <= ent)
+	{
 		_putchar(str[cnt]);
-		str++; 
+	      cnt = cnt +2;	
 	}
 	_putchar('\n');
 }
