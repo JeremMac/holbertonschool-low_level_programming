@@ -19,7 +19,7 @@ void puts_half(char *str)
 	}
 	cnt = cnt / 2;
 	numb--;
-	while (str[cnt] <= numb)
+	while (cnt <= numb)
 	{
 		_putchar(str[cnt]);
 		cnt++;
