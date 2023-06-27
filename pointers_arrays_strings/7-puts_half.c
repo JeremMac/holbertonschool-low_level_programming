@@ -20,7 +20,7 @@ void puts_half(char *str)
 	while (str[numb] <= cnt)
 	{
 		_putchar(str[numb]);
-		num++;
+		numb++;
 	}
 	cnt = cnt * 2;
 	numb++;
