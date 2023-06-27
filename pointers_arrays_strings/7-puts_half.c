@@ -31,7 +31,7 @@ void puts_half(char *str)
 			cnt++;
 		}
 	}
-	else
+	else if (numb % 2 != 0)
 	{
 		while (n < numb)
 		{
