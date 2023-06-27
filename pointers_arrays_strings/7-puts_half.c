@@ -25,7 +25,10 @@ void puts_half(char *str)
 	{
 		_putchar(str[cnt]);
 		cnt++;
-		if (cnt % 2 == 0)
+	}
+	if (cnt % 2 == 0)
+	{
+		while(n <= numb)
 		{
 			_putchar(str[n]);
 			n++;
