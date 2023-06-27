@@ -21,7 +21,7 @@ void puts2(char *str)
 	while (cnt <= ent)
 	{
 		_putchar(str[cnt]);
-	      cnt = cnt +2;	
+		cnt = cnt + 2;	
 	}
 	_putchar('\n');
 }
