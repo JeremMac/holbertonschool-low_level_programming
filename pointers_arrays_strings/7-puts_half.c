@@ -8,6 +8,7 @@ void puts_half(char *str)
 {
 	int cnt;
 	int numb;
+	int n;
 
 	cnt = 0;
 	numb = 0;
@@ -18,11 +19,17 @@ void puts_half(char *str)
 		numb++;
 	}
 	cnt = cnt / 2;
+	n = cnt - 1; 
 	numb--;
 	while (cnt <= numb)
 	{
 		_putchar(str[cnt]);
 		cnt++;
+		if (cnt % 2 == 0)
+		{
+			_putchar(str[n]);
+			n++;
+		}
 	}
 	_putchar('\n');
 }
