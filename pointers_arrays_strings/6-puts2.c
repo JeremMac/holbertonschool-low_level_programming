@@ -18,7 +18,7 @@ void puts2(char *str)
 		ent++;
 	}
 	ent--;
-	while (str[cnt] <= ent)
+	while (cnt <= ent)
 	{
 		_putchar(str[cnt]);
 	      cnt = cnt +2;	
