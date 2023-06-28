@@ -13,7 +13,7 @@ void print_array(int *a, int n)
 	while (a[len] <= n)
 	{
 		_putchar(a[len]);
-		_putchar('\n');
+		_putchar(',');
 		_putchar(' ');
 		len++;
 	}
