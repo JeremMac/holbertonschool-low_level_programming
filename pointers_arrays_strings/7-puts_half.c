@@ -25,7 +25,7 @@ void puts_half(char *str)
 	cnt = cnt / 2;
 	nom--;
 	numb--;
-	{
+	
 		while (cnt <= numb)
 		{
 			_putchar(str[cnt]);
