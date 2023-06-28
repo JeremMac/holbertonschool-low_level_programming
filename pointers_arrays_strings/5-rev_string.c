@@ -22,6 +22,7 @@ void rev_string(char *s)
 	while (len >= cnt)
 	{
 		_putchar(s[let]);
+		s[let] = let - 1;
 		len--;
 	}
 }
