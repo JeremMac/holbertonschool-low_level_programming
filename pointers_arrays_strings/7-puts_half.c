@@ -6,41 +6,30 @@
  */
 void puts_half(char *str)
 {
-	int cnt;
-	int numb;
-	int nb;
-	int n;
+	int len = 0;
+	int hal = 0;
 
-	cnt = 0;
-	numb = 0;
-	nb = 0;
-
-	while (str[cnt] != '\0')
+	while (str[len] != '\0')
 	{
-		cnt++;
-		numb++;
-		nb++;
+		len++;
 	}
-	cnt = cnt / 2;
-	numb--;
-	n = (nb + 1) / 2;
-	n++;
-
-	while (cnt <= numb)
+	hal = len / 2;
+	if (len % 2 == 0)
 	{
-		_putchar(str[cnt]);
-		cnt++;
-	}
-	numb++;
-	if (nb % 2 != 0)
-	{
-		numb++;
-		while (n < numb)
+		while(hal < len)
 		{
-			_putchar(str[n++]);
-			n++;
+			_putchar(str[hal]);
+			hal++;
 		}
-
+	}
+	if (len % 2 == 1)
+	{
+		hal = (len + 1) / 2;
+		while(hal < len)
+		{
+			_putchar(str[hal]);
+			hal++;
+		}
 	}
 	_putchar('\n');
 }
