@@ -10,7 +10,7 @@ void print_array(int *a, int n)
 {
 	int len = 0;
 
-	while (a[len] < n)
+	while (a[len] <= n)
 	{
 		_putchar(a[len]);
 		_putchar('\n');
