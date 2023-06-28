@@ -25,7 +25,6 @@ void puts_half(char *str)
 	numb--;
 	nb--;
 	n = (nb - 1) / 2; 
-	n++;
 
 	while (cnt <= numb)
 	{
