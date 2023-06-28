@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * char *_strcpy(char *dest, char *src)
+ *_strcpy - copy src string into dest and return the value
  * Return: return value od dest
  * char - type *dest and *src
  * @dest: pointer to dest
