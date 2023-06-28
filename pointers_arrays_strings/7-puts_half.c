@@ -10,12 +10,10 @@ void puts_half(char *str)
 	int numb;
 	int nb;
 	int n;
-	int chf;
 
 	cnt = 0;
 	numb = 0;
 	nb = 0;
-	chf = 0;
 
 	while (str[cnt] != '\0')
 	{
