@@ -10,15 +10,18 @@ void puts_half(char *str)
 	int numb;
 	int n;
 	int nom;
+	int chips;
 
 	cnt = 0;
 	numb = 0;
+	chips = 0;
 
 	while (str[cnt] != '\0')
 	{
 		cnt++;
 		numb++;
 		nom++;
+		chips++;
 	}
 	cnt = cnt / 2;
 	numb--;
@@ -28,7 +31,7 @@ void puts_half(char *str)
 		_putchar(str[cnt]);
 		cnt++;
 	}
-	if (nom % 2 != 0)
+	if (chips % 2 != 0)
 	{
 		numb++;
 		n = nom--;
