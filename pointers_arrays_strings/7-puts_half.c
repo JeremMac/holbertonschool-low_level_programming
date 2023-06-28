@@ -31,15 +31,5 @@ void puts_half(char *str)
 		_putchar(str[cnt]);
 		cnt++;
 	}
-	if (numb % 2 != 0)
-	{
-		n = nom--;
-		n = n / 2;
-		while (chips < n)
-		{
-			_putchar(str[chips]);
-			chips++;
-		}
-	}
 	_putchar('\n');
 }
