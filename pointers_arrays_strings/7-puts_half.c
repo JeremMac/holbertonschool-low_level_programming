@@ -30,9 +30,10 @@ void puts_half(char *str)
 	}
 	if (numb % 2 != 0)
 	{
+		numb++;
 		n = nom--;
 		n = n / 2;
-		while (n <= numb)
+		while (n < numb)
 		{
 			_putchar(str[n]);
 			n++;
