@@ -31,6 +31,7 @@ void puts_half(char *str)
 		_putchar(str[cnt]);
 		cnt++;
 	}
+	numb++;
 	if (nb % 2 != 0)
 	{
 		numb++;
