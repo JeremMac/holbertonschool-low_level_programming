@@ -21,7 +21,7 @@ void puts_half(char *str)
 		nom++;
 	}
 	cnt = cnt / 2;
-	n = (nom - 1) / 2; 
+	n = (nom - 1) / 2;
 	numb--;
 	if (numb % 2 != 0)
 	{
