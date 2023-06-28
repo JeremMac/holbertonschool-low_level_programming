@@ -28,7 +28,7 @@ void puts_half(char *str)
 		_putchar(str[cnt]);
 		cnt++;
 	}
-	if (numb % 2 != 0)
+	if (nom % 2 != 0)
 	{
 		numb++;
 		n = nom--;
