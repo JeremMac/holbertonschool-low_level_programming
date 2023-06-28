@@ -23,17 +23,16 @@ void puts_half(char *str)
 	cnt = cnt / 2;
 	numb--;
 	nom--;
-		while (cnt <= numb)
-		{
-			_putchar(str[cnt]);
-			cnt++;
-		}
-	
-	 if (numb % 2 != 0)
+	while (cnt <= numb)
+	{
+		_putchar(str[cnt]);
+		cnt++;
+	}
+	if (numb % 2 != 0)
 	{
 		n = nom--;
 		n = n / 2;
-		while (n < numb)
+		while (n <= numb)
 		{
 			_putchar(str[n]);
 			n++;
