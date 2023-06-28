@@ -27,6 +27,7 @@ void puts_half(char *str)
 	numb--;
 	nb--;
 	n = (nb - 1) / 2; 
+	n++;
 
 	while (cnt <= numb)
 	{
@@ -35,10 +36,10 @@ void puts_half(char *str)
 	}
 	if (nb % 2 != 0)
 	{
-		while (chf < n)
+		while (n < numb)
 		{
-			_putchar(str[chf]);
-			chf++;
+			_putchar(str[n++]);
+			n++;
 		}
 
 	}
