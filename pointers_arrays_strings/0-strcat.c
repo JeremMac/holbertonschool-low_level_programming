@@ -10,22 +10,17 @@ char *_strcat(char *dest, char *src)
 {
 	int lendest = 0;
 	int lensrc = 0;
-	int cnt = 0;
 
 	while (dest[lendest] != '\0')
 	{
 		lendest++;
 	}
 
-	while (src[lensrc] != '\0')
+	while (src[lensrc] == '\0')
 	{
 		lensrc++;
 	}
+		dest[lendest] = src[lensrc];
 
-	while (cnt < lensrc)
-	{
-		dest[lendest] = dest[lendest] + src[cnt];
-		cnt++;
-	}
 	return (dest);
 }
