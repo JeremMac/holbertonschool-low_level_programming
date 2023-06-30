@@ -15,15 +15,11 @@ char *_strcat(char *dest, char *src)
 	while (dest[lendest++] != '\0')
 	{
 		lendest++;
-	}
-
-	while (src[lensrc] == 0)
-	{
 		lensrc++;
 	}
-	while (cnt < lensrc)
+	while (cnt < src[lensrc])
 	{
-		dest[lendest] = dest[lendest] + src[cnt];
+		dest[lendest++] = src[cnt];
 		cnt++;
 	}
 
