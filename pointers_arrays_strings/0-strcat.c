@@ -22,9 +22,9 @@ char *_strcat(char *dest, char *src)
 		lensrc++;
 	}
 
-	while (cnt <= lensrc)
+	while (cnt < lensrc)
 	{
-		dest[lendest] = dest[lendest] + src[cnt];
+		dest[lendest] = dest[lendest] + src[cnt + 1];
 		cnt++;
 	}
 	return (dest);
