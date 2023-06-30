@@ -16,7 +16,7 @@ char *_strcat(char *dest, char *src)
 	{
 		lendest++;
 	}
-	while (src[lensrc] == '\0')
+	while (src[lensrc] != '\0')
 	{
 		lensrc++;
 	}
