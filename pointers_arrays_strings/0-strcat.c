@@ -17,14 +17,14 @@ char *_strcat(char *dest, char *src)
 		lendest++;
 	}
 
-	while (src[] == '\0')
+	while (src[lensrc] == '\0')
 	{
 		lensrc++;
 	}
 
 	while (cnt <= lensrc)
 	{
-		dest[lendest] + src[cnt]
+		dest[lendest] + src[cnt];
 		cnt++;
 	}
 	return (*dest);
