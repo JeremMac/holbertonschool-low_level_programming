@@ -15,6 +15,9 @@ char *_strcat(char *dest, char *src)
 	while (dest[lendest] != '\0')
 	{
 		lendest++;
+	}
+	while (src[lensrc] == \'\0')
+	{
 		lensrc++;
 	}
 	while (cnt < src[lensrc])
