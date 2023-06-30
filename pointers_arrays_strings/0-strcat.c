@@ -11,6 +11,7 @@ char *_strcat(char *dest, char *src)
 	int lendest = 0;
 	int lensrc = 0;
 	int cnt = 0;
+	int hu;
 
 	while (dest[lendest++] != '\0')
 	{
@@ -22,6 +23,7 @@ char *_strcat(char *dest, char *src)
 		lensrc++;
 	}
 
+	hu = lendest + lensrc;
 	while (cnt <= lendest)
 	{
 		dest[lendest] = dest[lendest] + src[cnt];
