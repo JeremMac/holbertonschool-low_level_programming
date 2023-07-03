@@ -2,18 +2,13 @@
 /**
  * _puts_recursion - prints a string followed by a new line
  * char - indicate that *s is a character
- * @s: points to a strign of characters
+ * @s: points to a string of characters
  */
 void _puts_recursion(char *s)
 {
-	int cnt = 0;
-
-	if(s[cnt] == '\0')
+	if(*s)
 	{
-		return;
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
-
-	_putchar(s[cnt]);
-	cnt++;
-	_puts_recursion(char *s);
 }
