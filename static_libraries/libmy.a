@@ -48,4 +48,4 @@ int _abs(int n);
 9-strcpy.o/     0           0     0     644     38        `
 char *_strcpy(char *dest, char *src);
 _putchar.o/     0           0     0     644     22        `
-int _putchar(char c);
+int _putchar(char c);  test
