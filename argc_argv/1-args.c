@@ -6,9 +6,9 @@
  * @argv: string arguments of the function
  * Return: always 0 (success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__((unused)) *argv[])
 {
-	argc - 1;
+	argc = argc - 1;
 	printf("%d\n", argc);
 	return (0);
 }
