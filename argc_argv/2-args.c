@@ -8,7 +8,8 @@
 int main(int argc, char *argv[])
 {
 	int cnt = 0;
-	while (cnt <= argc)
+
+	while (cnt < argc)
 	{
 		printf("%s\n", argv[cnt]);
 		cnt++;
