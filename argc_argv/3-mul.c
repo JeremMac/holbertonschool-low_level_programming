@@ -17,5 +17,5 @@ int main(int argc, char *argv[])
 	}
 	rslt = (atoi(argv[1]) * atoi(argv[2]));
 	printf("%d\n", rslt);
-	return(0);
+	return (0);
 }
