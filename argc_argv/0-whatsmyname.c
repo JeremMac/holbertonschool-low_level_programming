@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - a program who returns its own name
  * @argc: an int number of arguments
