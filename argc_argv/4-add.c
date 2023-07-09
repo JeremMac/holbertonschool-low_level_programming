@@ -10,12 +10,13 @@ int main(int argc, char *argv[])
 {
 	int rslt;
 	int idx = 1;
-	while(idx < argc)
+
+	while (idx < argc)
 	{
 	rslt += atoi(argv[idx]);
 		idx++;
 	}
-	while(idx < argc)
+	while (idx < argc)
 	{
 		if (atoi(argv[idx]) < '0' || atoi(argv[idx]) > '9')
 		{
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
 		}
 		idx++;
 	}
-	if(argc < 1)
+	if (argc < 1)
 	{
 		printf("0\n");
 	}
