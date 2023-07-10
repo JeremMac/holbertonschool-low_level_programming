@@ -10,7 +10,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ar;
-	int cnt = 0;
+	unsigned int cnt = 0;
 	ar = malloc(size * sizeof(char));
 	while (cnt < size)
 	{
