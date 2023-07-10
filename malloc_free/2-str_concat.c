@@ -1,6 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * _null - a function to return null if two strings are empty
+ * @st1: the fist part of the string
+ * Return: st1 as NULL
+ */
+char *_null(char *st1)
+{
+	if (st1 == NULL)
+	{
+		return (NULL);
+	}
+	return (st1);
+}
+/**
  * str_concat - concatanate the content of two given strings
  * @s1: the first part of the string to concatanated
  * @s2: the second part of the string to be concatanated
@@ -15,10 +28,8 @@ char *str_concat(char *s1, char *s2)
 	int true_len;
 	char *str;
 
-	if (s1 == NULL && s2 == NULL)
-	{
-		return (NULL);
-	}
+	_null(s1);
+	_null(s2);
 	while (s1[ls1] != '\0')
 	{
 		ls1++;
