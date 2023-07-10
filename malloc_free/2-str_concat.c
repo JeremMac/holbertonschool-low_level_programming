@@ -28,16 +28,16 @@ char *str_concat(char *s1, char *s2)
 	int true_len;
 	char *str;
 
-	_null(s1);
-	_null(s2);
 	while (s1[ls1] != '\0')
 	{
 		ls1++;
 	}
+	_null(s1);
 	while (s2[ls2] != '\0')
 	{
 		ls2++;
 	}
+	_null(s2);
 	true_len = ls1 + ls2;
 	str = malloc(true_len * sizeof(char) + 1);
 	if (str == NULL)
