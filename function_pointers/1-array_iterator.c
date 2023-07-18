@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * array_irerator - a function that execute a function
+ * array_iterator - a function that execute a function
  * given as a parameter on each element
  * of an array
  * @size: the size of the manipulated array
@@ -16,9 +16,9 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t index = 0;
 
-	if (action == NULL)
+	if (array == NULL)
 	{
-		return;
+		array = NULL;
 	}
 
 	while (index < size)
