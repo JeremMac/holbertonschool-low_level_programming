@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 /**
  * new_dog - a function that creates
@@ -13,34 +14,33 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *new_dog;
+	dog_t *other_dog;
 
-	new_dog = malloc(sizeof(struct dog));
+	other_dog = malloc(sizeof(dog_t));
 
-	if (new_dog == NULL)
+	if (other_dog == NULL)
 	{
-		free(new_dog);
 		return (NULL);
 	}
 
-	new_dog->name = malloc(sizeof(new_dog->name + 1));
+	other_dog->name = malloc(sizeof(strlen(name)) + sizeof(char));
 
-	if (new_dog->name == NULL)
+	if (other_dog->name == NULL)
 	{
-		free(new_dog->name);
+		free(other_dog);
 		return (NULL);
 	}
 
-	new_dog->owner = malloc(sizeof(new_dog->owner + 1));
+	other_dog->owner = malloc(sizeof(strlen(owner)) + sizeof(char));
 
-	if (new_dog->owner == NULL)
+	if (other_dog->owner == NULL)
 	{
-		free(new_dog->owner);
-		return (NULL);
+		free(other_dog->name);
+		free(other_dog);
 	}
+	strcpy(other_dog->name, name);
+	strcpy(other_dog->owner, owner);
+	other_dog->age = age;
 
-	new_dog->name = name;
-	new_dog->age = age;
-	new_dog->owner = owner;
-	return (new_dog);
+	return (other_dog);
 }
