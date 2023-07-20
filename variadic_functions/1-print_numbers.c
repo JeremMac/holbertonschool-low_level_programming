@@ -19,28 +19,20 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(ap, n);
 
-	if (separator != NULL)
+	while (index2 < n)
 	{
-		while (index2 < n)
-		{
-			index2++;
-		}
-		index2--;
-
+		index2++;
+	}
+	index2--;
 		for (index = 0; index < n; index++)
 		{
 			printf("%d", va_arg(ap, int));
-			if (index != index2)
+			if (index != index2 && separator != NULL)
 			{
 				printf("%s", separator);
 			}
-			if (separator == NULL)
-			{
-				printf("NULL");
-			}
 		}
 		printf("\n");
-	}
 	va_end(ap);
 
 }
