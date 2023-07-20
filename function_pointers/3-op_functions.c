@@ -4,7 +4,7 @@
 /**
  * op_add - a function that add two integers
  * @a: first integer to be added
- * @b second integer to be added
+ * @b: second integer to be added
  * Return: the sum of a + b
  */
 
@@ -54,7 +54,7 @@ int op_div(int a, int b)
  * of two integers
  * @a: the first integer to calculate
  * @b: the second integer to calculate
- * Return:
+ * Return: the modulo of a and b
  */
 
 int op_mod(int a, int b)
