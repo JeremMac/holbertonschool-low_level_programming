@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include <stdlib.h>
 
 /**
  * print_numbers - a function that prints
@@ -35,7 +36,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			}
 			if (separator == NULL)
 			{
-				return;
+				printf("NULL");
 			}
 		}
 		printf("\n");
