@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
+ * dlistint_len - a function that returns
+ * the number of nodes in a double
+ * linked list
+ * @h: a pointer to the list we need
+ * to work with
+ * Return: the size_t number of nodes
+ * in the given double linked list
  */
 
 size_t dlistint_len(const dlistint_t *h)
