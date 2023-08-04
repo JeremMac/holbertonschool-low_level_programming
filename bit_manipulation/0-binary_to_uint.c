@@ -3,7 +3,7 @@
 
 /**
  * binary_to_uint - a funtction
- * that convert a binary 
+ * that convert a binary
  * number to an unsigned int
  * @b: a pointer to the string
  * containing the numbers
@@ -25,7 +25,7 @@ unsigned int binary_to_uint(const char *b)
 		len++;
 	}
 
-	for(index = 0; index < len; index++)
+	for (index = 0; index < len; index++)
 	{
 		if (b[index] == '0' || b[index] == '1')
 		{
