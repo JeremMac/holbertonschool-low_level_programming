@@ -1,6 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+/**
+ * idx_is_zero - my function to
+ * verify if idx = zero
+ * @new_node: a new node
+ * to be created
+ * @h: a pointer to a given
+ * double linked list
+ * @n: the value we put
+ * into the new node
+ * Return: a created new node;
+ */
+
+dlistint_t *idx_is_zero(dlistint_t **h, dlistint_t *new_node, int n)
+{
+		new_node->n = n;
+		new_node->prev = NULL;
+		new_node->next = *h;
+		if (*h != NULL)
+			(*h)->prev = new_node;
+		*h = new_node;
+		return (new_node);
+}
 
 /**
  * insert_dnodeint_at_index - a function that
@@ -17,8 +39,7 @@
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *temp = *h;
-	dlistint_t *new_node = NULL;
+	dlistint_t *temp = *h, *new_node = NULL;
 	unsigned int count = 0;
 
 	new_node = malloc(sizeof(dlistint_t));
@@ -33,6 +54,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		new_node->prev = NULL;
 		return (new_node);
 	}
+	if (idx == 0)
+		idx_is_zero(h, new_node, n);
 
 	while (temp != NULL)
 	{
