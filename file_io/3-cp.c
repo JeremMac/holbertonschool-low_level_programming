@@ -20,7 +20,7 @@ void close_it(int a)
 	b = close(a);
 	if (b == -1)
 	{
-		dprintf(2, "Error: Can't close fd");
+		dprintf(2, "Error: Can't close fd\n");
 		exit(100);
 	}
 }
@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 	if (r == -1)
 	{
 		dprintf(2, "Error: Can't read from %s\n", file_from);
-		close_it(o);
+		close(o);
 		exit(98);
 	}
 
