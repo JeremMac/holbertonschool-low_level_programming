@@ -20,7 +20,7 @@ void close_it(int a)
 	b = close(a);
 	if (b == -1)
 	{
-		printf("Error: can't close fd");
+		dprintf(2, "Error: can't close fd");
 		exit(100);
 	}
 }
@@ -48,19 +48,19 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Usage: cp file_from file_to\n");
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
 	o = open(file_from, O_RDONLY);
 	if (o == -1)
 	{
-		printf("Error: can't read from file %s\n", file_from);
+		dprintf(2, "Error: can't read from file %s\n", file_from);
 	}
 	r = read(o, buffer, sizeof(buffer));
 	if (r == -1)
 	{
-		printf("Error: can't read from %s\n", file_from);
+		dprintf(2, "Error: can't read from %s\n", file_from);
 		close_it(o);
 		exit(98);
 	}
@@ -69,14 +69,14 @@ int main(int argc, char *argv[])
 			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	if (o2 == -1)
 	{
-		printf("Error: can't open or create file %s", file_to);
+		dprintf(2, "Error: can't open or create file %s", file_to);
 	}
 	w = write(o2, buffer, r);
 	if (w == -1)
 	{
 		close_it(o2);
 		close_it(o);
-		printf("Error: can't write to %s\n", file_to);
+		dprintf(2, "Error: can't write to %s\n", file_to);
 		exit(99);
 	}
 	close_it(o);
