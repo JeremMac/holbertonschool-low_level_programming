@@ -20,7 +20,7 @@ void close_it(int a)
 	b = close(a);
 	if (b == -1)
 	{
-		printf("Error: can't close fd %d", a);
+		printf("Error: can't close fd");
 		exit(100);
 	}
 }
