@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 	r = read(o, buffer, sizeof(buffer));
 	if (r == -1)
 	{
-		dprintf(2, "Error: Can't read from %s\n", file_from);
+		dprintf(2, "Error: Can't read from file %s\n", file_from);
 		close(o);
 		exit(98);
 	}
@@ -74,8 +74,8 @@ int main(int argc, char *argv[])
 	w = write(o2, buffer, r);
 	if (w == -1)
 	{
-		close_it(o2);
-		close_it(o);
+		close(o);
+		closei(o2);
 		dprintf(2, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
