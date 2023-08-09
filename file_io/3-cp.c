@@ -55,20 +55,22 @@ int main(int argc, char *argv[])
 	o = open(file_from, O_RDONLY);
 	o2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC,
 			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
-	while ((r = read(o, buffer, sizeof(buffer))) > 0)
+	r = read(o, buffer, sizeof(buffer));
+	if (r == -1 || o == -1)
 	{
-		if (r == -1 || o == -1)
-		{
-			dprintf(2, "Error: Can't read from file %s\n", file_from);
-			close(o);
-			exit(98);
-		}
+		dprintf(2, "Error: Can't read from file %s\n", file_from);
+		close(o);
+		exit(98);
+	}
+	while (r > 0)
+	{
 		w = write(o2, buffer, r);
 		if (o == -1 || w == -1)
 		{
 			dprintf(2, "Error: Can't write to %s\n", file_to);
 			exit(99);
 		}
+		r = read(o, buffer, sizeof(buffer));
 	}
 	close_it(o);
 	close_it(o2);
