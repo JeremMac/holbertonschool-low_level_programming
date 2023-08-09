@@ -53,6 +53,8 @@ int main(int argc, char *argv[])
 	}
 
 	o = open(file_from, O_RDONLY);
+	o2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC,
+			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	while ((r = read(o, buffer, sizeof(buffer))) > 0)
 	{
 		if (r == -1 || o == -1)
@@ -61,9 +63,6 @@ int main(int argc, char *argv[])
 			close(o);
 			exit(98);
 		}
-
-		o2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC,
-				S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 		w = write(o2, buffer, r);
 		if (o == -1 || w == -1)
 		{
