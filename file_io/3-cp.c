@@ -53,12 +53,8 @@ int main(int argc, char *argv[])
 	}
 
 	o = open(file_from, O_RDONLY);
-	if (o == -1)
-	{
-		dprintf(2, "Error: Can't read from file %s\n", file_from);
-	}
 	r = read(o, buffer, sizeof(buffer));
-	if (r == -1)
+	if (r == -1 || 0 == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", file_from);
 		close(o);
