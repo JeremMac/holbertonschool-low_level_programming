@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 	if (w == -1)
 	{
 		close(o);
-		closei(o2);
+		close(o2);
 		dprintf(2, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
