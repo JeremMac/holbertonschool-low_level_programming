@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 	r = read(o, buffer, sizeof(buffer));
 	if (r == -1 || o == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", file_from);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		close(o);
 		exit(98);
 	}
