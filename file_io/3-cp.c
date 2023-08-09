@@ -20,7 +20,7 @@ void close_it(int a)
 	b = close(a);
 	if (b == -1)
 	{
-		dprintf(2, "Error: Can't close fd\n");
+		dprintf(2, "Error: Can't close fd %d\n", a);
 		exit(100);
 	}
 }
@@ -53,27 +53,23 @@ int main(int argc, char *argv[])
 	}
 
 	o = open(file_from, O_RDONLY);
-	r = read(o, buffer, sizeof(buffer));
-	if (r == -1 || 0 == -1)
+	while ((r = read(o, buffer, sizeof(buffer))) > 0)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", file_from);
-		close(o);
-		exit(98);
-	}
+		if (r == -1 || o == -1)
+		{
+			dprintf(2, "Error: Can't read from file %s\n", file_from);
+			close(o);
+			exit(98);
+		}
 
-	o2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC,
-			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
-	if (o2 == -1)
-	{
-		dprintf(2, "Error: Can't open or create file %s", file_to);
-	}
-	w = write(o2, buffer, r);
-	if (w == -1)
-	{
-		close(o);
-		close(o2);
-		dprintf(2, "Error: Can't write to %s\n", file_to);
-		exit(99);
+		o2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC,
+				S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+		w = write(o2, buffer, r);
+		if (o == -1 || w == -1)
+		{
+			dprintf(2, "Error: Can't write to %s\n", file_to);
+			exit(99);
+		}
 	}
 	close_it(o);
 	close_it(o2);
