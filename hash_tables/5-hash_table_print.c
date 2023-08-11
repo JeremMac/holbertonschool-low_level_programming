@@ -25,18 +25,25 @@ void hash_table_print(const hash_table_t *ht)
 
 	for (index = 0; index < ht->size; index++)
 	{
-		temp = ht->array[index];
-
-		while (temp != NULL)
+		if(ht->array[index] != NULL)
 		{
-			if (comma == 1)
+			if(comma == 1)
 			{
 				printf(", ");
 			}
-			printf("'%s': '%s'", temp->key, temp->value);
-			temp = temp->next;
+			temp = ht->array[index];
+
+			while (temp != NULL)
+			{
+				printf("'%s': '%s'", temp->key, temp->value);
+				temp = temp->next;
+				if (temp != NULL)
+				{
+					printf(", ");
+				}
+			}
+			comma = 1;
 		}
-		comma = 1;
 	}
 
 	printf("}\n");
