@@ -4,7 +4,16 @@
 #include <string.h>
 
 /**
-*/
+ * hash_table_get - a function that
+ * retrive the value associated with
+ * a key
+ * @ht: a pointer to the hash table
+ * we are parsing
+ * @key: the given key we need to find
+ * the value associated to
+ * Return: NULL if no key can be found
+ * or the value associeted with found key
+ */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -17,7 +26,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	}
 
 
-	if(key == NULL || key[0] == '\0')
+	if (key == NULL || key[0] == '\0')
 	{
 		return (NULL);
 	}
