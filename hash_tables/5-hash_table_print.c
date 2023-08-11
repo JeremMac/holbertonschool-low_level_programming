@@ -25,7 +25,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	for (index = 0; index < ht->size; index++)
 	{
-		if(ht->array[index] != NULL)
+		if (ht->array[index] != NULL)
 		{
 			if(comma == 1)
 			{
